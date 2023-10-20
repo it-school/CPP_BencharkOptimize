@@ -1,8 +1,6 @@
 #include <iostream>
 #include <chrono>
 
-int var = 0;
-
 int main()
 {
 	const long long OPERATIONS = 1000000000; // 10 000 000 000
