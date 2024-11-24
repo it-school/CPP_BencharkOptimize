@@ -1,12 +1,12 @@
 #include <iostream>
 #include <chrono>
 
-const long long OPERATIONS = 1000000000; // 10 000 000 000
+const long long OPERATIONS = 1000000000; // 1 000 000 000
 
 /// <summary>
 /// Comparing loops performance with diferent counter types, conditions and run format
 /// </summary>
-void example1() {
+static void example1() {
 	long long x = 0, y = 0;
 
 	// ---------------------------------  1  ---------------------------------
@@ -38,7 +38,7 @@ void example1() {
 /// Let's solve the expression calculated in billion cycles loop and optimize it to improve the performance
 /// y = 5*x^7 - 2.5*x^6 + 3*x^5 - 8.3*x^4 + 5*x^3 - 9*x^2 + 10*x-2;
 /// </summary>
-void example2()
+static void example2()
 {
 	double y, a, b;
 	auto startTime = std::chrono::high_resolution_clock::now();
@@ -77,5 +77,8 @@ void example2()
 int main()
 {
 	example1();
+	// https://godbolt.org/z/813a9qWzz
+	// https://quick-bench.com/q/D7Qx7zPaO-qS_dqv7uiZCuQsOmU
+	// https://quick-bench.com/q/gOVXhfDs2bBwgTn6J41suDXO8pM
 	example2();
 }
