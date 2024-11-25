@@ -36,7 +36,7 @@ static void example1() {
 
 /// <summary>
 /// Let's solve the expression calculated in billion cycles loop and optimize it to improve the performance
-/// y = 5*x^7 - 2.5*x^6 + 3*x^5 - 8.3*x^4 + 5*x^3 - 9*x^2 + 10*x-2;
+/// y = 5*x^7 - 2.5*x^6 + 3*x^5 - 8.3*x^4 + 5*x^3 - 9*x^2 + 10*x - 2;
 /// </summary>
 static void example2()
 {
@@ -47,7 +47,7 @@ static void example2()
 		for (long long x = 0; x < OPERATIONS; x++)
 		{
 			// y = 5 * pow(x, 7) - 2.5 * pow(x, 6) + 3 * pow(x, 5) - 8.3 * pow(x, 4) + 5 * pow(x, 3) - 9 * pow(x, 2) + 10 * x - 2;  // 10470 ms
-			// y = 5 * x*x*x*x*x*x*x - 2.5 * x*x*x*x*x*x + 3 * x*x*x*x*x - 8.3 * x*x*x*x + 5 * x*x*x - 9 * x*x + 10 * x - 2;  // 70 ms
+			// y = 5 * x*x*x*x*x*x*x - 2.5 * x*x*x*x*x*x + 3 * x*x*x*x*x - 8.3 * x*x*x*x + 5 * x*x*x - 9 * x*x + 10 * x - 2;		// 70 ms
 
 // Optimization of calculations
 
